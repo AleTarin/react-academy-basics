@@ -3,23 +3,29 @@ h1, p {
   text-align: center;
 }
 
-.article__title {
-  background: #f2f2f2;
-  margin: 0;
-  padding: 0;
-  border-bottom: 2px solid black;
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
-.article__list li{
-  list-style: none;
-  padding-bottom: 10px;
-  text-align: center;
+.card {
+  background-color: #fff;
+  box-shadow: 0 2px 3px rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.1);
+  color: #4a4a4a;
+  max-width: 75%;
+  position: relative;
 }
-.article{
-    border: 2px solid black;
+.card__figure {
+  display: block;
+  position: relative;
 }
-.article__list {
-  margin: 0;
-  padding: 10px;
-  background: #f5f9f5;
+
+.card__content {
+  background-color: rgba(1, 1, 1, .02);
+  padding: 1.5rem;
+}
+
+.card__figure__img{
+  max-width: 100%;
 }

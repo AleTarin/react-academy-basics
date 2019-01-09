@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
 import Title from './Title';
-import List from './List';
+import Card from './Card';
 import './style.css';
 
 
@@ -19,22 +19,23 @@ class App extends Component {
   // Render life cylcle
   render() {
     const article = {
+        title: 'Prop Propagation',
         list: 
         [ 
-          "JSX: In jsx use curly brackets {} to add javascript code, this js will be evaluated and the result will appear on the final HTML.",
-          "Destructuring: An object can be also declared with destructuring where you specify what is inside the object."
+          "Child: Props",
+          "Parent: Emit Event"
         ],
-        title: 'Sintaxis'
+        img: 'https://static.imasters.com.br/wp-content/uploads/2017/06/4-1.png'
     }
 
     return (
-      <div>
+      <main className="wrapper">
         <Title name={this.state.name} />
-        <List title={article.title.toUpperCase()} list={article.list}/>
+        <Card title={article.title.toUpperCase()} list={article.list} img={article.img}/>
         <p>
           Based on: {url}
         </p>
-      </div>
+      </main>
     );
   }
 }
