@@ -1,0 +1,6 @@
+#dependencies
+node_modules
+
+#production
+package-lock.json
+node_modules/.bin/ansi-html
