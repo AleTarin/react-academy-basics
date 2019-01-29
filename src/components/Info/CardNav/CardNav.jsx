@@ -1,10 +1,10 @@
 
 import React from 'react';
-import {navStyle} from './style';
+import { navStyle } from './style';
 
-const CardNav = ({next, handler}) => {
+const CardNav = ({ next, handler }) => {
   return (
-    <button style={navStyle(next)} onClick={handler(next)}>
+    <button style={navStyle(next)} onClick={event => handler(event, next)}>
       {next ? '>' : '<'}
     </button>
   );

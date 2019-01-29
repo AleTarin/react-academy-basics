@@ -50,7 +50,7 @@ class InfoContainer extends Component {
   // === ENDS Helper Functions
 
   // Click Event handler 
-  handleClick = next => event => {
+  handleClick = (event, next) => {
     event.preventDefault();
     let index = articles.indexOf(this.findArticle());
     const len = articles.length - 1;
